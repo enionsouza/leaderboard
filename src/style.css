@@ -1,12 +1,9 @@
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/proxima-nova-light.otf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
-  --font-family-sans-serif: "Proxima Nova", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --style-script: 'Style Script', cursive;
+  --quicksand: 'Quicksand', sans-serif;
   --primary-color: #1c78c0;
   --secondary-color: #8ed6fb;
   --background-color: #d5ebf6;
@@ -16,8 +13,21 @@ body {
   background-color: var(--background-color);
 }
 
-.new-style {
-  color: var(--primary-color);
-  font-family: var(--font-family-sans-serif);
+h1 {
+  font-family: var(--style-script);
+  font-style: italic;
+  font-size: 5em;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+.table td {
   text-align: center;
+}
+
+#recent-scores {
+  max-width: 450px;
+  min-width: 350px;
 }
