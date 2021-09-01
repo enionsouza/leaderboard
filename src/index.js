@@ -14,8 +14,8 @@ id.then((res) => {
 
   async function renderTable() {
     const tbody = document.querySelector('tbody');
-    const scores = await game.scores;
     tbody.innerHTML = '';
+    const scores = await game.scores;
     scores.forEach((row) => {
       tbody.innerHTML += `
                 <tr>
@@ -30,7 +30,7 @@ id.then((res) => {
     e.preventDefault();
     const user = document.getElementById('username');
     const score = document.getElementById('score');
-    game.submitScore(user.value, score.value);
+    if (user.value && score.value) game.submitScore(user.value, score.value);
     user.value = '';
     score.value = '';
     renderTable();
