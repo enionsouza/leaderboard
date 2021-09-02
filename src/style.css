@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
   --style-script: 'Style Script', cursive;
-  --quicksand: 'Quicksand', sans-serif;
   --primary-color: #1c78c0;
-  --secondary-color: #8ed6fb;
+  --dark-color: #1f282f;
   --background-color: #d5ebf6;
 }
 
@@ -19,15 +17,98 @@ h1 {
   font-size: 5em;
 }
 
-thead td {
-  font-weight: bold;
+table {
+  display: inline-block;
+  max-height: 40vh;
+  overflow-y: scroll;
+  width: 40vw;
 }
 
-.table td {
+thead th {
+  font-weight: bold;
+  text-align: center;
+  width: 50vw;
+}
+
+tbody td {
   text-align: center;
 }
 
 #recent-scores {
   max-width: 450px;
   min-width: 350px;
+}
+
+#recent-scores-body {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.loading-ellipsis {
+  display: none;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+}
+
+.loading-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--dark-color);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: loading-ellipsis1 0.6s infinite;
+}
+
+.loading-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: loading-ellipsis2 0.6s infinite;
+}
+
+.loading-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: loading-ellipsis2 0.6s infinite;
+}
+
+.loading-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: loading-ellipsis3 0.6s infinite;
+}
+
+@keyframes loading-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loading-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loading-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
 }

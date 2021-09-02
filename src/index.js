@@ -15,7 +15,10 @@ id.then((res) => {
   const renderTable = async () => {
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = '';
+    const loadingImg = document.querySelector('.loading-ellipsis');
+    loadingImg.style.display = 'inline-block';
     const scores = await game.scores;
+    loadingImg.style.display = 'none';
     scores.forEach((row) => {
       tbody.innerHTML += `
                 <tr>
