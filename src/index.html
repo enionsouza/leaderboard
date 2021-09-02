@@ -7,33 +7,35 @@
   <title>Leaderboard</title>
 </head>
 <body class="container">
-  <h1 class="my-5">Leaderboard</h1>
-  <main class="row">
-    <section id="recent-scores" class="col-md-6 px-3">
-      <div id="recent-scores-head" class="d-flex justify-content-around">
-        <h2>Recent Scores</h2>
-        <button class="my-auto btn btn-primary">Refresh</button>
-      </div>
-      <div id="recent-scores-body" class="px-md-3 mt-3">
-        <table class="table table-dark table-sm table-striped table-hover">
-          <thead>
-            <td>User</td>
-            <td>Score</td>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <div class="col-md-1"></div>
-    <form action="#" method="post" class="col-md-5 ps-3 d-flex flex-column">
-      <h2 class="row px-2">Add your score</h2>
-      <div class="row px-2">
-        <input type="text" name="username" id="username" placeholder="Your name" class="my-3">
-        <input type="number" name="score" id="score" placeholder="Your score" class="mb-3">
-      </div>
-      <input type="submit" value="Submit" class="btn btn-primary me-0 align-self-end">
-    </form>
-  </main>
+  <div class="container">
+    <h1 class="my-5">Leaderboard</h1>
+    <main class="row">
+      <section id="recent-scores" class="col-md-8 px-3">
+        <div id="recent-scores-head" class="d-flex justify-content-around">
+          <h2>Recent Scores</h2>
+          <button class="my-auto btn btn-primary">Refresh</button>
+        </div>
+        <div id="recent-scores-body" class="px-md-3 mt-3">
+          <table class="table table-dark table-sm table-striped table-hover">
+            <thead>
+              <td>User</td>
+              <td>Score</td>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <div class="col-md-1"></div>
+      <form action="#" method="post" class="col-md-3 ps-3 d-flex flex-column">
+        <h3 class="row px-2">Add your score</h3>
+        <div class="row px-2">
+          <input type="text" name="username" id="username" placeholder="Your name" class="my-3">
+          <input type="number" name="score" id="score" placeholder="Your score" class="mb-3">
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary me-0 align-self-end">
+      </form>
+    </main>
+  </div>
 </body>
 </html>
