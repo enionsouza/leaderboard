@@ -1,16 +1,25 @@
-# Leaderboard - Milestone #2 (Hit the API)
+# Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ![Screenshot](./docs/Screenshot.png)
 
 ## Built With
 
-- HTML, CSS, JavaScript, & Webpack;
-- Visual Studio, Git, & GitHub;
+- HTML, CSS, JavaScript, & Webpack
+- Visual Studio, Git, & GitHub
+
+## Pre-requisites
+
+- NodeJs (v. 14.17)
+- Git
+
+## Live Demo
+
+A live demo for this project can be found in [this link](https://enionsouza.github.io/leaderboard/dist/).
 
 ## Getting Started
 
-To run this project, you only need a computer with a browser (like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, etc.) installed, and follow these steps:
+To run this project, you only need a computer with a browser installed, and follow these steps:
 
 1. In your terminal, in the folder of your preference, type the following bash command to clone this repository:
 
@@ -18,7 +27,7 @@ To run this project, you only need a computer with a browser (like Google Chrome
 git clone git@github.com:enionsouza/leaderboard.git
 ```
 
-2. Now that you have already cloned the repo run the following commands to get the project up and running:
+2. Now that you have already cloned the repo, run the following commands to get the project up and running:
 ```sh
 cd leaderboard
 npm install
