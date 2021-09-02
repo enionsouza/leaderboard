@@ -1,3 +1,18 @@
+<p align="center">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square">
+  </a>
+  <a href="https://github.com/enionsouza/leaderboard/blob/develop/LICENSE">
+    <img alt="MIT Licensed" src="https://img.shields.io/github/license/enionsouza/leaderboard?style=flat-square">
+  </a>
+  <a href="https://github.com/enionsouza/leaderboard">
+    <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/enionsouza/leaderboard/develop?color=blue&style=flat-square">
+  </a>
+  <a href="https://github.com/enionsouza/leaderboard">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/enionsouza/leaderboard?color=cyan&label=%E2%98%85%20stars%20&style=flat-square">
+  </a>
+</p>
+
 # Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
