@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
-async function getGameID() {
+const getGameID = async () => {
   const gameID = localStorage.gameID
   || await fetch(url, {
     method: 'POST',
@@ -15,6 +15,6 @@ async function getGameID() {
     .then((res) => res.json())
     .then((json) => json.result);
   return gameID;
-}
+};
 
 export const gameID = getGameID();

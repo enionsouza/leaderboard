@@ -12,7 +12,7 @@ id.then((res) => {
   const refreshBtn = document.querySelector('button');
   const submitBtn = document.querySelector('input[type="submit"]');
 
-  async function renderTable() {
+  const renderTable = async () => {
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = '';
     const scores = await game.scores;
@@ -24,9 +24,9 @@ id.then((res) => {
                 </tr>
       `;
     });
-  }
+  };
 
-  async function submitNewScore(e) {
+  const submitNewScore = async (e) => {
     e.preventDefault();
     const user = document.getElementById('username');
     const score = document.getElementById('score');
@@ -34,7 +34,7 @@ id.then((res) => {
     user.value = '';
     score.value = '';
     renderTable();
-  }
+  };
 
   refreshBtn.onclick = renderTable;
   submitBtn.onclick = submitNewScore;
